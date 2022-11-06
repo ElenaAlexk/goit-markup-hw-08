@@ -1,0 +1,22 @@
+.footer-list {
+  font-size: $fs-text;
+  font-style: normal;
+  line-height: 1.71;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__item {
+    margin-bottom: 9px;
+  }
+  &__item :hover,
+  &__item :focus {
+    color: $accentcolor;
+  }
+}
+.footer-list__text {
+  color: $background-color;
+  text-decoration: none;
+}
+.footer-list__link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}

@@ -1,0 +1,42 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+    font-weight: $fw-title;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: $title-color;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+.clients__item {
+  flex-basis: calc((100% - 150px) / 6);
+}
+.clients__link {
+  display: flex;
+  box-sizing: border-box;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $socialscolor;
+  border-radius: $card-radius;
+  align-items: center;
+  justify-content: center;
+  color: $socialscolor;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accentcolor;
+    border-color: $accentcolor;
+  }
+}
+.clients__icon {
+  fill: currentColor;
+}

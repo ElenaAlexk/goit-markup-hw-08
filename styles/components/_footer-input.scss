@@ -1,0 +1,36 @@
+.form {
+  margin-left: 93px;
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: $fw-title;
+    font-size: $fs-text;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $background-color;
+  }
+}
+.form__input {
+  padding: 15px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: $card-radius;
+  margin-right: 12px;
+  color: $background-color;
+  background-color: #2f303a;
+
+  &::placeholder {
+    font-size: $fs-title;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.form__button {
+  padding: 10px 28px;
+}
+.form__icon {
+  fill: $background-color;
+  margin-left: 10px;
+  vertical-align: middle;
+}
