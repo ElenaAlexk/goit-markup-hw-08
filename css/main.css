@@ -20,10 +20,25 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 img {
@@ -949,19 +964,6 @@ ol {
 }
 
 .card__title {
-  color: #212121;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.item__text {
-  margin-top: 4px;
-  color: #757575;
-  font-size: 16px;
-  line-height: 1.87;
-}/*# sourceMappingURL=main.css.map */rd__title {
   color: #212121;
   font-weight: 700;
   font-size: 18px;
