@@ -1,6 +1,8 @@
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   &__list {
     display: block;
@@ -8,6 +10,12 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+.section__item {
+  max-width: 100%;
+  @media screen and (min-width: 768px) {
+    flex-basis: 50%;
   }
 }
 .section__icons {

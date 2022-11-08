@@ -71,9 +71,6 @@ ol {
 }
 
 .page-header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -185,7 +182,7 @@ ol {
 }
 
 .hero {
-  max-width: 1600px;
+  max-width: 100%;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -203,7 +200,6 @@ ol {
   margin: 0 auto;
   margin-top: 0px;
   margin-bottom: 30px;
-  width: 696px;
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -485,6 +481,8 @@ ol {
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .section__list {
   display: block;
@@ -496,6 +494,16 @@ ol {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+.section__item {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .section__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
 }
 
