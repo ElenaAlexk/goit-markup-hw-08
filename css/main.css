@@ -20,8 +20,7 @@ body {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -60,7 +59,7 @@ h6 {
 ul,
 ol {
   padding-left: 0px;
-  margin: 0px;
+  margin: 0px auto;
   list-style: none;
 }
 
@@ -760,15 +759,17 @@ ol {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-.page-footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
-.page-footer__logo {
+.page-footer__container__logo {
   margin-bottom: 20px;
 }
 
@@ -839,7 +840,6 @@ ol {
 
 .form__input {
   padding: 15px;
-  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
