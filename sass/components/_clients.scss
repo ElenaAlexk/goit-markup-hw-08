@@ -1,15 +1,25 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: $fw-title;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     color: $title-color;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
   }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -17,12 +27,18 @@
   }
 }
 .clients__item {
-  flex-basis: calc((100% - 150px) / 6);
+  flex-basis: calc((100% - 30px) / 2);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 .clients__link {
   display: flex;
   box-sizing: border-box;
-  width: 170px;
   height: 92px;
   border: 1px solid $socialscolor;
   border-radius: $card-radius;
