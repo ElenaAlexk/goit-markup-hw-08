@@ -1,15 +1,19 @@
 .page-footer {
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2f303a;
 
   &__container {
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: baseline;
+      justify-content: space-between;
     }
-    &__logo {
-      margin-bottom: 20px;
-    }
+  }
+  &__logo {
+    margin-bottom: 20px;
   }
 }
