@@ -880,7 +880,7 @@ ol {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .footer-socials {
     margin-bottom: 60px;
   }
