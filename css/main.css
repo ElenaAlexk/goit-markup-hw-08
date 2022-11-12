@@ -974,9 +974,6 @@ ol {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.page-footer__container {
-  text-align: center;
-}
 @media screen and (min-width: 768px) {
   .page-footer__container {
     display: -webkit-box;
@@ -986,6 +983,11 @@ ol {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .page-footer__container {
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
