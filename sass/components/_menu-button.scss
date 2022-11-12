@@ -1,7 +1,10 @@
 .menu-toggle {
   display: inline-flex;
   border: none;
+  margin: 0;
+  padding: 0;
   background-color: transparent;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     display: none;
