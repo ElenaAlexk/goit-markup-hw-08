@@ -10,6 +10,87 @@
     display: none;
   }
 }
-.icon-menu {
-  color: currentColor;
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 796px;
+  padding: 48px 40px;
+  font-weight: $fw-text;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  background-color: $background-color;
+  z-index: 4;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  fill: currentColor;
+}
+.menu-icon:hover,
+.menu-icon:focus {
+  color: $accentcolor;
+}
+.menu-icon {
+  fill: currentColor;
+}
+.menu-site {
+  font-size: 40px;
+
+  &__item:not(:last-child) {
+    padding-bottom: 32px;
+  }
+
+  &__link {
+    color: $title-color;
+    text-decoration: none;
+  }
+  &__link--current {
+    color: $accentcolor;
+  }
+  & :hover,
+  & :focus {
+    color: $accentcolor;
+  }
+}
+.menu-auth {
+  padding-top: 302px;
+
+  &__item {
+    padding-bottom: 32px;
+  }
+  &__item:last-child {
+    padding-bottom: 64px;
+  }
+  &__link--tel {
+    font-size: 34px;
+    color: $accentcolor;
+    text-decoration: none;
+  }
+  &__link--mail {
+    font-size: 24px;
+    color: $text-color;
+    text-decoration: none;
+  }
+}
+.menu-socials {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+  line-height: 1.22;
+
+  &__item {
+    margin-right: 20px;
+  }
+  &__link {
+    color: $accentcolor;
+    text-decoration: none;
+  }
 }

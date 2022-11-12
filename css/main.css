@@ -76,12 +76,14 @@ ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .page-header__nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    height: 80px;
   }
 }
 
@@ -122,8 +124,100 @@ ol {
   }
 }
 
-.icon-menu {
-  color: currentColor;
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 796px;
+  padding: 48px 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  background-color: #ffffff;
+  z-index: 4;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  fill: currentColor;
+}
+
+.menu-icon:hover,
+.menu-icon:focus {
+  color: #2196f3;
+}
+
+.menu-icon {
+  fill: currentColor;
+}
+
+.menu-site {
+  font-size: 40px;
+}
+.menu-site__item:not(:last-child) {
+  padding-bottom: 32px;
+}
+.menu-site__link {
+  color: #212121;
+  text-decoration: none;
+}
+.menu-site__link--current {
+  color: #2196f3;
+}
+.menu-site :hover, .menu-site :focus {
+  color: #2196f3;
+}
+
+.menu-auth {
+  padding-top: 302px;
+}
+.menu-auth__item {
+  padding-bottom: 32px;
+}
+.menu-auth__item:last-child {
+  padding-bottom: 64px;
+}
+.menu-auth__link--tel {
+  font-size: 34px;
+  color: #2196f3;
+  text-decoration: none;
+}
+.menu-auth__link--mail {
+  font-size: 24px;
+  color: #757575;
+  text-decoration: none;
+}
+
+.menu-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 18px;
+  line-height: 1.22;
+}
+.menu-socials__item {
+  margin-right: 20px;
+}
+.menu-socials__link {
+  color: #2196f3;
+  text-decoration: none;
 }
 
 .site-nav {
