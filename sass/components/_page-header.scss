@@ -2,20 +2,14 @@
   padding-top: 0px;
   padding-bottom: 0px;
   border-bottom: 1px solid $cardcolor;
-}
-.page-header__nav {
-  display: flex;
-  align-items: center;
-  height: 60px;
-  justify-content: space-between;
-}
-.page-header__logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-@media screen and (min-width: 768px) {
+
+  .page-header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .page-header__logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
