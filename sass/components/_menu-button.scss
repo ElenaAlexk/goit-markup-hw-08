@@ -15,13 +15,9 @@
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  font-weight: $fw-text;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
   background-color: $background-color;
   z-index: 4;
   transform: translateX(100%);
@@ -47,12 +43,17 @@
   fill: currentColor;
 }
 .menu-site {
+  display: block;
+  font-weight: $fw-text;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
   font-size: 40px;
+  color: $title-color;
+  margin-bottom: 240px;
 
   &__item:not(:last-child) {
     padding-bottom: 32px;
   }
-
   &__link {
     color: $title-color;
     text-decoration: none;
@@ -66,19 +67,22 @@
   }
 }
 .menu-auth {
-  &__item {
+  display: block;
+  margin-bottom: 64px;
+  font-weight: $fw-text;
+
+  &__item:not(:last-child) {
     padding-bottom: 32px;
-  }
-  &__item:last-child {
-    padding-bottom: 64px;
   }
   &__link--tel {
     font-size: 34px;
+    line-height: 1.18;
     color: $accentcolor;
     text-decoration: none;
   }
   &__link--mail {
     font-size: 24px;
+    line-height: 1.17;
     color: $text-color;
     text-decoration: none;
   }
@@ -86,6 +90,7 @@
 .menu-socials {
   display: flex;
   justify-content: flex-start;
+  font-weight: $fw-text;
   font-size: 18px;
   line-height: 1.22;
 

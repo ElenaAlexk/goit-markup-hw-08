@@ -129,9 +129,6 @@ ol {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
   background-color: #ffffff;
   z-index: 4;
   -webkit-transform: translateX(100%);
@@ -168,7 +165,13 @@ ol {
 }
 
 .menu-site {
+  display: block;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
   font-size: 40px;
+  color: #212121;
+  margin-bottom: 240px;
 }
 .menu-site__item:not(:last-child) {
   padding-bottom: 32px;
@@ -184,19 +187,23 @@ ol {
   color: #2196f3;
 }
 
-.menu-auth__item {
-  padding-bottom: 32px;
+.menu-auth {
+  display: block;
+  margin-bottom: 64px;
+  font-weight: 500;
 }
-.menu-auth__item:last-child {
-  padding-bottom: 64px;
+.menu-auth__item:not(:last-child) {
+  padding-bottom: 32px;
 }
 .menu-auth__link--tel {
   font-size: 34px;
+  line-height: 1.18;
   color: #2196f3;
   text-decoration: none;
 }
 .menu-auth__link--mail {
   font-size: 24px;
+  line-height: 1.17;
   color: #757575;
   text-decoration: none;
 }
@@ -208,6 +215,7 @@ ol {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
 }
