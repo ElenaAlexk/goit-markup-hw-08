@@ -859,8 +859,8 @@ ol {
 }
 
 .gallery {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: #f5f4fa;
 }
 @media screen and (max-width: 1199px) {
@@ -873,8 +873,8 @@ ol {
   margin-bottom: 30px;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
@@ -920,12 +920,12 @@ ol {
 
 .gallery__content {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   text-align: center;
 }
 
 .gallery__subtitle {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   color: #212121;
   font-weight: 500;
   font-size: 16px;
@@ -933,7 +933,6 @@ ol {
 }
 
 .gallery__text {
-  margin-top: 10px;
   color: #757575;
   font-size: 16px;
   line-height: 1.19;
