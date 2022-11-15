@@ -1,14 +1,18 @@
 .checkbox {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 100%;
   margin-bottom: 30px;
   margin-top: 20px;
-  font-size: $fs-text;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   color: $text-color;
 
+  @media screen and (min-width: 1200px) {
+    font-size: $fs-text;
+    line-height: 1.71;
+  }
   &__field {
     position: absolute;
     width: 1px;
