@@ -14,6 +14,8 @@
     margin: 0 auto;
     margin-top: 0px;
     margin-bottom: 30px;
+    width: 360px;
+    height: 84px;
     color: $background-color;
     font-weight: 900;
     font-size: 26px;
@@ -43,12 +45,7 @@
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero@1x_t.jpg');
   }
-  @media screen and (min-width: 768px) {
-    .hero__title {
-      width: 360px;
-      height: 87px;
-    }
-  }
+
   @media (min-devise-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero@2x_t.jpg');
@@ -57,7 +54,7 @@
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
