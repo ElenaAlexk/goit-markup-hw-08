@@ -804,6 +804,7 @@ ol {
 @media screen and (min-width: 1200px) {
   .features {
     display: block;
+    padding-bottom: 94px;
   }
 }
 .features__title {
@@ -863,10 +864,10 @@ ol {
   padding-top: 60px;
   background-color: #f5f4fa;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .gallery {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .gallery__title {
