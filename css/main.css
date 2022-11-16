@@ -174,7 +174,7 @@ ol {
   margin-bottom: 240px;
 }
 .menu-site__item:not(:last-child) {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 .menu-site__link {
   color: #212121;
@@ -188,6 +188,8 @@ ol {
 }
 
 .menu-auth {
+  position: absolute;
+  bottom: 64px;
   display: block;
   margin-bottom: 64px;
   font-weight: 500;
@@ -209,6 +211,8 @@ ol {
 }
 
 .menu-socials {
+  position: absolute;
+  bottom: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
